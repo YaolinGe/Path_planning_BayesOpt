@@ -197,7 +197,7 @@ y_vec = y.reshape(n, 1)
 
 # BayesOpt
 step_no = 0     # iteration counter
-steps_total = 50   # maximum iteration
+steps_total = 100   # maximum iteration
 EI_max = np.zeros([steps_total, 1])
 EI_mean = np.zeros([steps_total, 1])
 Gd_total = np.zeros([steps_total + steps_init, n])
@@ -344,7 +344,7 @@ import imageio
 # png_dir = os.getcwd() + "/fig/mean/"
 # fig_path = os.getcwd() + "/fig_" + postfix_time_label + "/EI/" + "{:03d}".format(step_no) + ".png"
 png_dir = os.getcwd() + "/fig_" + postfix_time_label + "/std/"
-name = "std.gif"
+name = os.getcwd() + "/fig_" + postfix_time_label + "/std.gif"
 image_file_names = []
 images = []
 
